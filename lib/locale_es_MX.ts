@@ -6,13 +6,13 @@ const weekdayLong = ["domingo", "lunes", "martes", "miércoles", "jueves", "vier
 const monthShort = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sept", "oct", "nov", "dic"];
 const monthLong = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 
-export const locale_es_MX:cdateNS.Handlers = {
+export const locale_es_MX: cdateNS.Handlers = {
     "%a": dt => weekdayShort[dt.getDay()],
     "%A": dt => weekdayLong[dt.getDay()],
     "%b": dt => monthShort[dt.getMonth()],
     "%B": dt => monthLong[dt.getMonth()],
     "%p": dt => (dt.getHours() < 12 ? "a.m." : "p.m."),
-    
+
     // dom, 2 de ene de 2022 03:04:05
     "%c": "%a, %-d de %b de %Y %H:%M:%S",
 

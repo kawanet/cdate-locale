@@ -6,13 +6,13 @@ const weekdayLong = ["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "v
 const monthShort = ["jan.", "feb.", "mrt.", "apr.", "mei", "jun.", "jul.", "aug.", "sep.", "okt.", "nov.", "dec."];
 const monthLong = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
 
-export const locale_nl:cdateNS.Handlers = {
+export const locale_nl: cdateNS.Handlers = {
     "%a": dt => weekdayShort[dt.getDay()],
     "%A": dt => weekdayLong[dt.getDay()],
     "%b": dt => monthShort[dt.getMonth()],
     "%B": dt => monthLong[dt.getMonth()],
     "%p": dt => (dt.getHours() < 12 ? "a.m." : "p.m."),
-    
+
     // zo 2 jan. 2022 03:04:05
     "%c": "%a %-d %b %Y %H:%M:%S",
 

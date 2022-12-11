@@ -123,13 +123,13 @@ const main = async (lang: string) => {
         const monthShort = ${toJSON(monthShort)};
         const monthLong = ${toJSON(monthLong)};
 
-        export const locale_${_lang}:cdateNS.Handlers = {
+        export const locale_${_lang}: cdateNS.Handlers = {
             "%a": dt => weekdayShort[dt.getDay()],
             "%A": dt => weekdayLong[dt.getDay()],
             "%b": dt => monthShort[dt.getMonth()],
             "%B": dt => monthLong[dt.getMonth()],
             "%p": dt => (dt.getHours() < 12 ? "${ampm[11]}" : "${ampm[13]}"),
-            
+
             // ${sample.c}
             "%c": "${style.c}",
 
