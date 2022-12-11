@@ -1,6 +1,6 @@
 {
   "name": "cdate-locale",
-  "description": "I18N addon for cdate's display handlers",
+  "description": "I18N display handlers for cdate",
   "version": "0.0.1",
   "author": "@kawanet",
   "browser": {
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.11.9",
-    "cdate": "file:../cdate/cdate-0.0.1.tgz",
+    "cdate": "^0.0.1",
     "mocha": "^10.1.0",
     "typescript": "^4.9.3"
   },
@@ -101,6 +101,7 @@
   ],
   "homepage": "https://github.com/kawanet/cdate-locale#readme",
   "keywords": [
+    "I18N",
     "locale",
     "moment-locale",
     "strftime"
