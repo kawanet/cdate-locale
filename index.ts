@@ -9,3 +9,5 @@ export { locale_ja } from "./lib/locale_ja.js";
 export { locale_ko } from "./lib/locale_ko.js";
 export { locale_nl } from "./lib/locale_nl.js";
 export { locale_pt } from "./lib/locale_pt.js";
+export { locale_zh_CN } from "./lib/locale_zh_CN.js";
+export { locale_zh_TW } from "./lib/locale_zh_TW.js";

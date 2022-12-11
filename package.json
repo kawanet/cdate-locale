@@ -15,7 +15,9 @@
     "./lib/locale_ja.js": "./lib/locale_ja.cjs",
     "./lib/locale_ko.js": "./lib/locale_ko.cjs",
     "./lib/locale_nl.js": "./lib/locale_nl.cjs",
-    "./lib/locale_pt.js": "./lib/locale_pt.cjs"
+    "./lib/locale_pt.js": "./lib/locale_pt.cjs",
+    "./lib/locale_zh_CN.js": "./lib/locale_zh_CN.cjs",
+    "./lib/locale_zh_TW.js": "./lib/locale_zh_TW.cjs"
   },
   "bugs": {
     "url": "https://github.com/kawanet/cdate-locale/issues"
@@ -79,6 +81,14 @@
     "./lib/locale_pt.js": {
       "import": "./lib/locale_pt.js",
       "require": "./lib/locale_pt.cjs"
+    },
+    "./lib/locale_zh_CN.js": {
+      "import": "./lib/locale_zh_CN.js",
+      "require": "./lib/locale_zh_CN.cjs"
+    },
+    "./lib/locale_zh_TW.js": {
+      "import": "./lib/locale_zh_TW.js",
+      "require": "./lib/locale_zh_TW.cjs"
     }
   },
   "files": [

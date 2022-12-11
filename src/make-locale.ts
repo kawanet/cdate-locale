@@ -13,11 +13,15 @@ const getDateArray = (dt: Date, size: number, days: number): Date[] => {
     return new Array(size).fill(0).map((_, idx) => new Date(+dt + idx * days * d.DAY));
 };
 
+const getHourArray = (dt: Date, size: number, hours: number): Date[] => {
+    return new Array(size).fill(0).map((_, idx) => new Date(+dt + idx * hours * d.HOUR));
+};
+
 const main = async (lang: string) => {
     const initDate = new Date("2022-01-02T03:04:05Z");
     const months = getDateArray(initDate, 12, 31);
     const days = getDateArray(initDate, 7, 1);
-    const hours = getDateArray(initDate, 2, .5);
+    const hours = getHourArray(new Date("2022-01-02T00:00:00Z"), 24, 1);
 
     let weekdayShort: string[];
     let weekdayLong: string[];
@@ -31,7 +35,7 @@ const main = async (lang: string) => {
         "%A": dt => weekdayLong[dt.getDay()],
         "%b": dt => monthShort[dt.getMonth()],
         "%B": dt => monthLong[dt.getMonth()],
-        "%p": dt => (dt.getHours() < 12 ? ampm[0] : ampm[1]),
+        "%p": dt => (dt.getHours() < 12 ? ampm[11] : ampm[13]),
     };
 
     const dt = cdate(initDate).utc().handler(locale);
@@ -64,7 +68,7 @@ const main = async (lang: string) => {
     {
         const format = Intl.DateTimeFormat(lang, formatOptions.r);
         ampm = hours.map(dt => format.formatToParts(dt).find(v => v.type === "dayPeriod").value);
-        console.warn("ampm:  ", ampm.join(" "));
+        console.warn("ampm:  ", ampm.reduce((array, v) => (((array.at(-1) !== v) && array.push(v)), array), []).join(" "));
     }
 
     {
@@ -124,7 +128,7 @@ const main = async (lang: string) => {
             "%A": dt => weekdayLong[dt.getDay()],
             "%b": dt => monthShort[dt.getMonth()],
             "%B": dt => monthLong[dt.getMonth()],
-            "%p": dt => (dt.getHours() < 12 ? "${ampm[0]}" : "${ampm[1]}"),
+            "%p": dt => (dt.getHours() < 12 ? "${ampm[11]}" : "${ampm[13]}"),
             
             // ${sample.c}
             "%c": "${style.c}",
