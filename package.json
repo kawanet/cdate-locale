@@ -1,0 +1,113 @@
+{
+  "name": "cdate-locale",
+  "description": "I18N addon for cdate's display handlers",
+  "version": "0.0.1",
+  "author": "@kawanet",
+  "browser": {
+    "./index.js": "./index.cjs",
+    "./lib/locale_de.js": "./lib/locale_de.cjs",
+    "./lib/locale_en.js": "./lib/locale_en.cjs",
+    "./lib/locale_en_GB.js": "./lib/locale_en_GB.cjs",
+    "./lib/locale_es.js": "./lib/locale_es.cjs",
+    "./lib/locale_es_MX.js": "./lib/locale_es_MX.cjs",
+    "./lib/locale_fr.js": "./lib/locale_fr.cjs",
+    "./lib/locale_it.js": "./lib/locale_it.cjs",
+    "./lib/locale_ja.js": "./lib/locale_ja.cjs",
+    "./lib/locale_ko.js": "./lib/locale_ko.cjs",
+    "./lib/locale_nl.js": "./lib/locale_nl.cjs",
+    "./lib/locale_pt.js": "./lib/locale_pt.cjs"
+  },
+  "bugs": {
+    "url": "https://github.com/kawanet/cdate-locale/issues"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^18.11.9",
+    "cdate": "file:../cdate/cdate-0.0.1.tgz",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs"
+    },
+    "./index.js": {
+      "import": "./index.js",
+      "require": "./index.cjs"
+    },
+    "./lib/locale_de.js": {
+      "import": "./lib/locale_de.js",
+      "require": "./lib/locale_de.cjs"
+    },
+    "./lib/locale_en.js": {
+      "import": "./lib/locale_en.js",
+      "require": "./lib/locale_en.cjs"
+    },
+    "./lib/locale_en_GB.js": {
+      "import": "./lib/locale_en_GB.js",
+      "require": "./lib/locale_en_GB.cjs"
+    },
+    "./lib/locale_es.js": {
+      "import": "./lib/locale_es.js",
+      "require": "./lib/locale_es.cjs"
+    },
+    "./lib/locale_es_MX.js": {
+      "import": "./lib/locale_es_MX.js",
+      "require": "./lib/locale_es_MX.cjs"
+    },
+    "./lib/locale_fr.js": {
+      "import": "./lib/locale_fr.js",
+      "require": "./lib/locale_fr.cjs"
+    },
+    "./lib/locale_it.js": {
+      "import": "./lib/locale_it.js",
+      "require": "./lib/locale_it.cjs"
+    },
+    "./lib/locale_ja.js": {
+      "import": "./lib/locale_ja.js",
+      "require": "./lib/locale_ja.cjs"
+    },
+    "./lib/locale_ko.js": {
+      "import": "./lib/locale_ko.js",
+      "require": "./lib/locale_ko.cjs"
+    },
+    "./lib/locale_nl.js": {
+      "import": "./lib/locale_nl.js",
+      "require": "./lib/locale_nl.cjs"
+    },
+    "./lib/locale_pt.js": {
+      "import": "./lib/locale_pt.js",
+      "require": "./lib/locale_pt.cjs"
+    }
+  },
+  "files": [
+    "index.cjs",
+    "index.js",
+    "index.d.ts",
+    "lib/*.cjs",
+    "lib/*.js",
+    "lib/*.d.ts"
+  ],
+  "homepage": "https://github.com/kawanet/cdate-locale#readme",
+  "keywords": [
+    "locale",
+    "moment-locale",
+    "strftime"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawanet/cdate-locale.git"
+  },
+  "scripts": {
+    "build": "tsc -p . && make clean all",
+    "fixpack": "fixpack",
+    "prepack": "npm run build && npm test",
+    "test": "mocha test"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "./index.d.ts"
+}
