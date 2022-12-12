@@ -22,9 +22,12 @@ cdate().handler(locale_fr).strftime("%c");
 
 ## LOCALES
 
-- Find supported locales at [cdate-locale/index.d.ts](https://github.com/kawanet/cdate-locale/blob/main/index.d.ts)
+- Find the list of the bundled locales at
+  [index.d.ts](https://github.com/kawanet/cdate-locale/blob/main/index.d.ts) or
+  [locales.yml](https://github.com/kawanet/cdate-locale/blob/main/locales.yml)
 
 ## LINKS
 
+- https://github.com/kawanet/cdate
 - https://github.com/kawanet/cdate-locale
 - https://www.npmjs.com/package/cdate-locale

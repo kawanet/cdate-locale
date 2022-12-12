@@ -102,6 +102,8 @@
   "homepage": "https://github.com/kawanet/cdate-locale#readme",
   "keywords": [
     "I18N",
+    "Intl",
+    "cdate",
     "locale",
     "moment-locale",
     "strftime"
