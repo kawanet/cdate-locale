@@ -115,7 +115,7 @@
     "url": "git+https://github.com/kawanet/cdate-locale.git"
   },
   "scripts": {
-    "build": "tsc -p . && make clean all",
+    "build": "make clean all",
     "fixpack": "fixpack",
     "prepack": "npm run build && npm test",
     "test": "mocha test"
