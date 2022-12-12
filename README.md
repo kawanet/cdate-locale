@@ -8,16 +8,32 @@
 ```js
 // TypeScript, ESM
 import {cdate} from "cdate";
-import {locale_fr} from "cdate-locale";
+import {locale_en} from "cdate-locale";
 
 // CommonJS
 const {cdate} = require("cdate");
 const {locale_fr} = require("cdate-locale");
-// OR
-const {locale_fr} = require("cdate-locale/locale/ja");
+const {locale_de} = require("cdate-locale/locale/de.js");
+```
 
-cdate().handler(locale_fr).strftime("%c");
-// => 'dim. 11 déc. 2022, 16:40:06'
+```js
+cdate().handler(locale_en).format("MMMM")
+// => 'December'
+
+cdate().handler(locale_en).text("%c");
+// => 'Mon, Dec 12, 2022, 7:26:12 PM'
+
+cdate().handler(locale_fr).format("MMMM")
+// => 'décembre'
+
+cdate().handler(locale_fr).text("%c");
+// => 'lun. 12 déc. 2022, 19:26:12'
+
+cdate().handler(locale_de).format("MMMM")
+// => 'Dezember'
+
+cdate().handler(locale_de).text("%c");
+// => Mo., 12. Dez. 2022, 19:26:12'
 ```
 
 ## LOCALES
