@@ -5,19 +5,19 @@
   "author": "@kawanet",
   "browser": {
     "./index.js": "./index.cjs",
-    "./lib/locale_de.js": "./lib/locale_de.cjs",
-    "./lib/locale_en.js": "./lib/locale_en.cjs",
-    "./lib/locale_en_GB.js": "./lib/locale_en_GB.cjs",
-    "./lib/locale_es.js": "./lib/locale_es.cjs",
-    "./lib/locale_es_MX.js": "./lib/locale_es_MX.cjs",
-    "./lib/locale_fr.js": "./lib/locale_fr.cjs",
-    "./lib/locale_it.js": "./lib/locale_it.cjs",
-    "./lib/locale_ja.js": "./lib/locale_ja.cjs",
-    "./lib/locale_ko.js": "./lib/locale_ko.cjs",
-    "./lib/locale_nl.js": "./lib/locale_nl.cjs",
-    "./lib/locale_pt.js": "./lib/locale_pt.cjs",
-    "./lib/locale_zh_CN.js": "./lib/locale_zh_CN.cjs",
-    "./lib/locale_zh_TW.js": "./lib/locale_zh_TW.cjs"
+    "./locale/de.js": "./locale/de.cjs",
+    "./locale/en.js": "./locale/en.cjs",
+    "./locale/en_GB.js": "./locale/en_GB.cjs",
+    "./locale/es.js": "./locale/es.cjs",
+    "./locale/es_MX.js": "./locale/es_MX.cjs",
+    "./locale/fr.js": "./locale/fr.cjs",
+    "./locale/it.js": "./locale/it.cjs",
+    "./locale/ja.js": "./locale/ja.cjs",
+    "./locale/ko.js": "./locale/ko.cjs",
+    "./locale/nl.js": "./locale/nl.cjs",
+    "./locale/pt.js": "./locale/pt.cjs",
+    "./locale/zh_CN.js": "./locale/zh_CN.cjs",
+    "./locale/zh_TW.js": "./locale/zh_TW.cjs"
   },
   "bugs": {
     "url": "https://github.com/kawanet/cdate-locale/issues"
@@ -38,66 +38,66 @@
       "import": "./index.js",
       "require": "./index.cjs"
     },
-    "./lib/locale_de.js": {
-      "import": "./lib/locale_de.js",
-      "require": "./lib/locale_de.cjs"
+    "./locale/de.js": {
+      "import": "./locale/de.js",
+      "require": "./locale/de.cjs"
     },
-    "./lib/locale_en.js": {
-      "import": "./lib/locale_en.js",
-      "require": "./lib/locale_en.cjs"
+    "./locale/en.js": {
+      "import": "./locale/en.js",
+      "require": "./locale/en.cjs"
     },
-    "./lib/locale_en_GB.js": {
-      "import": "./lib/locale_en_GB.js",
-      "require": "./lib/locale_en_GB.cjs"
+    "./locale/en_GB.js": {
+      "import": "./locale/en_GB.js",
+      "require": "./locale/en_GB.cjs"
     },
-    "./lib/locale_es.js": {
-      "import": "./lib/locale_es.js",
-      "require": "./lib/locale_es.cjs"
+    "./locale/es.js": {
+      "import": "./locale/es.js",
+      "require": "./locale/es.cjs"
     },
-    "./lib/locale_es_MX.js": {
-      "import": "./lib/locale_es_MX.js",
-      "require": "./lib/locale_es_MX.cjs"
+    "./locale/es_MX.js": {
+      "import": "./locale/es_MX.js",
+      "require": "./locale/es_MX.cjs"
     },
-    "./lib/locale_fr.js": {
-      "import": "./lib/locale_fr.js",
-      "require": "./lib/locale_fr.cjs"
+    "./locale/fr.js": {
+      "import": "./locale/fr.js",
+      "require": "./locale/fr.cjs"
     },
-    "./lib/locale_it.js": {
-      "import": "./lib/locale_it.js",
-      "require": "./lib/locale_it.cjs"
+    "./locale/it.js": {
+      "import": "./locale/it.js",
+      "require": "./locale/it.cjs"
     },
-    "./lib/locale_ja.js": {
-      "import": "./lib/locale_ja.js",
-      "require": "./lib/locale_ja.cjs"
+    "./locale/ja.js": {
+      "import": "./locale/ja.js",
+      "require": "./locale/ja.cjs"
     },
-    "./lib/locale_ko.js": {
-      "import": "./lib/locale_ko.js",
-      "require": "./lib/locale_ko.cjs"
+    "./locale/ko.js": {
+      "import": "./locale/ko.js",
+      "require": "./locale/ko.cjs"
     },
-    "./lib/locale_nl.js": {
-      "import": "./lib/locale_nl.js",
-      "require": "./lib/locale_nl.cjs"
+    "./locale/nl.js": {
+      "import": "./locale/nl.js",
+      "require": "./locale/nl.cjs"
     },
-    "./lib/locale_pt.js": {
-      "import": "./lib/locale_pt.js",
-      "require": "./lib/locale_pt.cjs"
+    "./locale/pt.js": {
+      "import": "./locale/pt.js",
+      "require": "./locale/pt.cjs"
     },
-    "./lib/locale_zh_CN.js": {
-      "import": "./lib/locale_zh_CN.js",
-      "require": "./lib/locale_zh_CN.cjs"
+    "./locale/zh_CN.js": {
+      "import": "./locale/zh_CN.js",
+      "require": "./locale/zh_CN.cjs"
     },
-    "./lib/locale_zh_TW.js": {
-      "import": "./lib/locale_zh_TW.js",
-      "require": "./lib/locale_zh_TW.cjs"
+    "./locale/zh_TW.js": {
+      "import": "./locale/zh_TW.js",
+      "require": "./locale/zh_TW.cjs"
     }
   },
   "files": [
     "index.cjs",
     "index.js",
     "index.d.ts",
-    "lib/*.cjs",
-    "lib/*.js",
-    "lib/*.d.ts"
+    "locale/*.cjs",
+    "locale/*.js",
+    "locale/*.d.ts"
   ],
   "homepage": "https://github.com/kawanet/cdate-locale#readme",
   "keywords": [

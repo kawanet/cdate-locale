@@ -1,6 +1,6 @@
 {
   "include": [
-    "lib/"
+    "locale/"
   ],
   "compilerOptions": {
     "declaration": true,

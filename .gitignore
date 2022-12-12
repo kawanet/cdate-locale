@@ -6,9 +6,9 @@
 ._*
 .idea/*.xml
 index.cjs
-lib/*.cjs
-lib/*.d.ts
-lib/*.js
+locale/*.cjs
+locale/*.d.ts
+locale/*.js
 src/*.js
 test/*.js
 node_modules/

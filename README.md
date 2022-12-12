@@ -14,7 +14,7 @@ import {locale_fr} from "cdate-locale";
 const {cdate} = require("cdate");
 const {locale_fr} = require("cdate-locale");
 // OR
-const {locale_fr} = require("cdate-locale/lib/locale_ja");
+const {locale_fr} = require("cdate-locale/locale/ja");
 
 cdate().handler(locale_fr).strftime("%c");
 // => 'dim. 11 déc. 2022, 16:40:06'
