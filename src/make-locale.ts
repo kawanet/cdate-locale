@@ -68,7 +68,8 @@ const main = async (lang: string) => {
     {
         const format = Intl.DateTimeFormat(lang, formatOptions.r);
         ampm = hours.map(dt => format.formatToParts(dt).find(v => v.type === "dayPeriod").value);
-        console.warn("ampm:  ", ampm.reduce((array, v) => (((array.at(-1) !== v) && array.push(v)), array), []).join(" "));
+        let last: string;
+        console.warn("ampm:  ", ampm.reduce((array, v) => (((last !== v) && array.push(last = v)), array), []).join(" "));
     }
 
     {
