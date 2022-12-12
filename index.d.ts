@@ -1,13 +1,15 @@
-export { locale_de } from "./lib/locale_de.js";
-export { locale_en } from "./lib/locale_en.js";
-export { locale_en_GB } from "./lib/locale_en_GB.js";
-export { locale_es } from "./lib/locale_es.js";
-export { locale_es_MX } from "./lib/locale_es_MX.js";
-export { locale_fr } from "./lib/locale_fr.js";
-export { locale_it } from "./lib/locale_it.js";
-export { locale_ja } from "./lib/locale_ja.js";
-export { locale_ko } from "./lib/locale_ko.js";
-export { locale_nl } from "./lib/locale_nl.js";
-export { locale_pt } from "./lib/locale_pt.js";
-export { locale_zh_CN } from "./lib/locale_zh_CN.js";
-export { locale_zh_TW } from "./lib/locale_zh_TW.js";
+import type {cdate} from "cdate";
+
+export const locale_de: cdate.Handlers;
+export const locale_en: cdate.Handlers;
+export const locale_en_GB: cdate.Handlers;
+export const locale_es: cdate.Handlers;
+export const locale_es_MX: cdate.Handlers;
+export const locale_fr: cdate.Handlers;
+export const locale_it: cdate.Handlers;
+export const locale_ja: cdate.Handlers;
+export const locale_ko: cdate.Handlers;
+export const locale_nl: cdate.Handlers;
+export const locale_pt: cdate.Handlers;
+export const locale_zh_CN: cdate.Handlers;
+export const locale_zh_TW: cdate.Handlers;
