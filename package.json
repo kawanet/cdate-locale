@@ -1,7 +1,7 @@
 {
   "name": "cdate-locale",
   "description": "I18N display handlers for cdate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "@kawanet",
   "browser": {
     "./index.js": "./index.cjs",
@@ -23,11 +23,11 @@
     "url": "https://github.com/kawanet/cdate-locale/issues"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.0",
-    "@types/node": "^18.11.9",
-    "cdate": "^0.0.1",
-    "mocha": "^10.1.0",
-    "typescript": "^4.9.3"
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.16",
+    "cdate": "^0.0.2",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.4"
   },
   "exports": {
     ".": {
