@@ -144,8 +144,11 @@ const main = async (lang: string) => {
             "%X": "${style.X}",
         };\n`.replace(/^        /mg, "");
 
-    // NBSP
-    fmt = fmt.replace(/\xa0/g, "");
+    // U+00A0 NBSP - non-breaking space
+    fmt = fmt.replace(/\u00A0/g, "");
+
+    // U+202F NNBSP - narrow no-break space
+    fmt = fmt.replace(/\u202F/g, " ");
 
     // result
     process.stdout.write(fmt);
